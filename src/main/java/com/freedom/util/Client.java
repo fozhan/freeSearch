@@ -27,7 +27,7 @@ public class Client {
 		BasicCookieStore cookieStore = new BasicCookieStore();
 		CloseableHttpClient httpclient = HttpClients.custom()
 				.setDefaultCookieStore(cookieStore).build();
-		//httpclient.getParams().setParameter(ClientPNames.COOKIE_POLICY, CookiePolicy.BEST_MATCH);
+		//httpclient.getParams().setParameter(ClientPNames.COOKIE_POLICY, CookiePolicy.BEST_MATCH);test
 		try {
 			HttpGet httpget = new HttpGet("http://t.qq.com/");
 			httpget.setConfig(config);
